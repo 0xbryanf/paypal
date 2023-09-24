@@ -6,6 +6,9 @@ function validateEnv(): void {
             choices: ['development', 'production']
         }),
         PORT: port({ default: 3000 }),
+        PAYPAL_CLIENT_SECRET: str(),
+        PAYPAL_CLIENT_ID: str(),
+        BASE: str(),
     })
 }
 
